@@ -8,6 +8,8 @@ TagManager:
   - Death
   - Health
   - Coin
+  - Weak Point!
+  - Weak Point Boss!
   layers:
   - Default
   - TransparentFX

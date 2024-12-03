@@ -11,5 +11,17 @@ public class MonsterStomp : MonoBehaviour
             print("Sigma");
             Destroy(collision.gameObject);
         }
+        if (collision.gameObject.tag == "Weak Point Boss!")
+        {
+           if (collision.gameObject.tag == "Weak Point Boss!")
+           {
+                print("Sigma");
+                Destroy(collision.gameObject);
+
+
+            }
+                
+        }
+
     }
 }
