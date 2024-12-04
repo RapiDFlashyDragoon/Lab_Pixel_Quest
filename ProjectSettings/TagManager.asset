@@ -10,6 +10,7 @@ TagManager:
   - Coin
   - Weak Point!
   - Weak Point Boss!
+  - HitBox
   layers:
   - Default
   - TransparentFX
