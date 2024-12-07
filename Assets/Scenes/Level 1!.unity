@@ -1863,7 +1863,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4083794261671255758, guid: e344dd4d903232d4eadf591572eff464, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Weak Point!
       objectReference: {fileID: 0}
     - target: {fileID: 6833980079809416985, guid: e344dd4d903232d4eadf591572eff464, type: 3}
       propertyPath: chaseDistance
@@ -50994,8 +50994,8 @@ BuoyancyEffector2D:
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_SurfaceLevel: 10
-  m_Density: 2
+  m_SurfaceLevel: 12
+  m_Density: 4
   m_LinearDrag: 5
   m_AngularDrag: 5
   m_FlowAngle: 0
