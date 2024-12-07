@@ -9,6 +9,7 @@ public class Structs
     {
         public const string isWalking = "IsWalking";
         public const string Attack_1 = "Dash Boss1";
+        public const string Attack_2 = "Ground Pount";
     }
 
     public struct Input

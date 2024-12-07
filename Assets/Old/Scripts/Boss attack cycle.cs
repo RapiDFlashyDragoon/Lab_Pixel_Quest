@@ -26,19 +26,19 @@ public class Boss_Attack_1 : MonoBehaviour
 
     IEnumerator waiter()
     {
+        isChasing = true;
         collider.enabled = false;
         //Rotate 90 deg
-        _animator.SetBool(Structs.AnimationParameters.Attack_1, true);
+        
 
         //Wait for 4 seconds
         yield return new WaitForSeconds(4);
 
         //Rotate 40 deg
-        _animator.SetBool(Structs.AnimationParameters.Attack_1, false);
-
+        
         //Wait for 2 seconds
         yield return new WaitForSeconds(2);
-        collider.enabled = true;
+        
 
         isChasing = true; 
 
@@ -51,12 +51,12 @@ public class Boss_Attack_1 : MonoBehaviour
             if (transform.position.x > playerTransform.position.x)
             {
                 transform.localScale = new Vector3(1, 1, 1);
-                transform.position += Vector3.left * moveSpeed * Time.deltaTime;
+                transform.position += Vector3.left * 500 * Time.deltaTime;
             }
             if (transform.position.x < playerTransform.position.x)
             {
                 transform.localScale = new Vector3(-1, 1, 1);
-                transform.position += Vector3.right * moveSpeed * Time.deltaTime;
+                transform.position += Vector3.right * 500 * Time.deltaTime;
             }
         }
         else
@@ -67,7 +67,7 @@ public class Boss_Attack_1 : MonoBehaviour
             }
             if (patrolDestination == 0)
             {
-                transform.position = Vector2.MoveTowards(transform.position, patrolPoints[0].position, moveSpeed * Time.deltaTime);
+                transform.position = Vector2.MoveTowards(transform.position, patrolPoints[0].position, 500 * Time.deltaTime);
 
                 if (Vector2.Distance(transform.position, patrolPoints[0].position) < .2f)
                 {
@@ -77,7 +77,7 @@ public class Boss_Attack_1 : MonoBehaviour
             }
             if (patrolDestination == 1)
             {
-                transform.position = Vector2.MoveTowards(transform.position, patrolPoints[1].position, moveSpeed * Time.deltaTime);
+                transform.position = Vector2.MoveTowards(transform.position, patrolPoints[1].position, 500 * Time.deltaTime);
 
                 if (Vector2.Distance(transform.position, patrolPoints[1].position) < .2f)
                 {
@@ -91,4 +91,5 @@ public class Boss_Attack_1 : MonoBehaviour
 
     }
 }
+
 
