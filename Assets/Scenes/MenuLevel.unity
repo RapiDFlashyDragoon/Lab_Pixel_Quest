@@ -181,8 +181,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Pixel Quest
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 478579933e3c32647a216b8f2d93560b, type: 2}
-  m_sharedMaterial: {fileID: -7202128288837269133, guid: 478579933e3c32647a216b8f2d93560b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f8ab594da118059438d68c2d9eaaa5a0, type: 2}
+  m_sharedMaterial: {fileID: -6544468248083886957, guid: f8ab594da118059438d68c2d9eaaa5a0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -315,8 +315,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Chapter 0 - The  Kingdom.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0600e4a350b576c4cbfee2cb695ba596, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 0600e4a350b576c4cbfee2cb695ba596, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f8ab594da118059438d68c2d9eaaa5a0, type: 2}
+  m_sharedMaterial: {fileID: -6544468248083886957, guid: f8ab594da118059438d68c2d9eaaa5a0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -15,7 +15,7 @@ public class MonsterStomp : MonoBehaviour
         {
            if (collision.gameObject.tag == "Weak Point Boss!")
            {
-                print("Sigma");
+                print("Boss Oof");
                 Destroy(collision.gameObject);
 
 
