@@ -23,4 +23,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 2!.unity
     guid: 13082b31cb7746d428c3eb8add557727
+  - enabled: 1
+    path: Assets/Scenes/Kings Castle.unity
+    guid: 9198e1a9d3d5bc24fa25abe70460699a
+  - enabled: 1
+    path: Assets/Scenes/Kings Hall.unity
+    guid: 7177bf8b70ae1bb4f9683fc6694f43ac
+  - enabled: 1
+    path: Assets/Scenes/Sorry.unity
+    guid: 6f62256ed39f5e74e887504ddb192eb2
+  - enabled: 1
+    path: Assets/Scenes/Level 3!.unity
+    guid: 64b8e29b363785b40b05b6e24dcc3748
   m_configObjects: {}

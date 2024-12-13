@@ -1,45 +1,50 @@
-
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
+using System;
 
-public class TimerScript : MonoBehaviour
+public class Countdown : MonoBehaviour
 {
-    public float TimeLeft;
-    public bool TimerOn = false;
+    [SerializeField] private TextMeshProUGUI timerText;
 
-    public Text TimerTxt;
+    public float currentTime = 30f;
+    private bool active = true;
 
-    void Start()
+    private void Update()
     {
-        TimerOn = true;
-    }
+        if (!active)
+            return;
 
-    void Update()
-    {
-        if (TimerOn)
+        currentTime -= Time.deltaTime;
+
+        UpdateTimerUI();
+
+        if (currentTime <= 0)
         {
-            if (TimeLeft > 0)
-            {
-                TimeLeft -= Time.deltaTime;
-                updateTimer(TimeLeft);
-            }
-            else
-            {
-                Debug.Log("Time is UP!");
-                TimeLeft = 0;
-                TimerOn = false;
-            }
+            StopTimer();
         }
     }
 
-    void updateTimer(float currentTime)
+    public void StopTimer()
     {
-        currentTime += 1;
-
-        float minutes = Mathf.FloorToInt(currentTime / 60);
-        float seconds = Mathf.FloorToInt(currentTime % 60);
-
-        TimerTxt.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        active = false;
+        currentTime = 0f;
+        UpdateTimerUI();
     }
 
+    private void UpdateTimerUI()
+    {
+        if (currentTime > 0 && currentTime < 6)
+        {
+            timerText.color = Color.yellow;
+        }
+        else if (currentTime < 1)
+        {
+            timerText.color = Color.red;
+        }
+
+        TimeSpan t = TimeSpan.FromSeconds(currentTime);
+        timerText.text = t.ToString(@"mm\:ss");
+    }
 }
